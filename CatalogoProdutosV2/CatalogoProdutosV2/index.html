@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>CATÁLOGO DE PRODUTOS</h1>
+
+    <div id="filtro-container">
+        <label for="categoria-filtro">Filtrar por categoria:</label>
+        <select id="categoria-filtro">
+            <option value="todos">Todos</option>
+            <option value="eletronicos">Eletrônicos</option>
+            <option value="vestuario">Vestuário</option>
+            <option value="comidas">Comidas</option>
+        </select>
+
+        <label for="preco-filtro">Filtrar por preço:</label>
+        <select id="preco-filtro">
+            <option value="ordenarPor">Ordenar por</option>
+            <option value="menorVal">Menor valor</option>
+            <option value="maiorVal">Maior valor</option>
+        </select>
+        <label for="nome-filtro">Filtrar por nome:</label>
+        <input type="text" id="nome-filtro" placeholder="Buscar">
+    </div>
+
+    <div id="lista-produtos">
+        <!-- Os produtos serão exibidos aqui. -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
